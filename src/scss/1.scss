@@ -1,0 +1,69 @@
+@import 'reset';
+#courses{
+    min-height: 50vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    // background-color: rgb(16, 85, 62);
+    color: rgb(255, 255, 255);
+    background-image: url(../images/20210910151609_歷史系.jpg ) ;
+    background-size: cover;
+    position: relative;
+    .content{
+        z-index: 99;
+    }
+    
+}
+.timeline{
+        width: 100%;
+        position: relative;
+        z-index: 9;
+        &::after {
+            content: '';
+            position: absolute;
+            border-left: 4px dashed #fff;
+            top: 0;
+            left: calc(50% - 2px);
+            height: 100%;
+        }
+        .item{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            word-wrap: break-all;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            &:first-child{
+                padding-top: 40px;
+            }
+            &:last-child{
+                padding-bottom: 40px;
+            }
+            &:nth-child(even){
+                .text{
+                    left: unset;
+                    // 讓他初始化，回到原點
+                    right: calc(50% + 50px);
+                    text-align: right;
+                    background-color: rgb(142, 103, 46);
+                    color: #fff;
+                }
+            }
+        }
+        .circle{
+            width: 24px;
+            height: 24px;
+            border-radius: 24px;
+            background-color: rgb(255, 255, 255);
+        }
+        .text{
+            padding: 20px;
+            position: absolute;
+            background-color: rgb(224, 188, 142);
+            border-radius: 8px;
+            color: rgb(81, 48, 5);
+            left: calc(50% + 50px);
+          
+    }
+}

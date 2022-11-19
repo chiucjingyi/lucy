@@ -1,0 +1,35 @@
+$main-color: rgb(4, 63, 94);
+$border-height: 50px;
+
+.container{
+    color: $main-color;
+}
+#header{
+    background-color: #407dce;
+    color: aliceblue;
+    &:hover {background-color: #1b72dc ;}
+    font-size: 20px;
+    width: 800px;
+    margin: 20px auto;
+}
+.title{
+    font-size: 30px;
+}
+#wrap{
+    height: $border-height*5;
+    background-color: #a5ccff;
+}
+
+
+
+
+
+@mixin image {
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+.image {
+    display: flex;
+    @include image;
+}

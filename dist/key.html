@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/key.css">
+</head>
+<body>
+    <div class="block" onclick="doRun(this)"></div>
+    <div class="block1" onclick="doRun1(this)"></div>
+    <div class="block2" onclick="doRun2(this)"></div>
+
+
+
+    <script>
+        const doRun = (el) => {
+            el.classList.remove('run')
+
+            setTimeout(() => {
+                el.classList.add('run')
+            }, 300)
+        }
+    </script>
+     <script>
+        const doRun1 = (el) => {
+            el.classList.remove('run1')
+            
+            setTimeout(() => {
+                el.classList.add('run1')
+            }, 300)
+        }
+    </script>
+     <script>
+        const doRun2 = (el) => {
+            el.classList.remove('run2')
+            
+            setTimeout(() => {
+                el.classList.add('run2')
+            }, 300)
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+@import 'reset';
+.block{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgb(230, 193, 193);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.run{
+        animation-name: remove;
+        animation-duration: 3s;
+        // animation-iteration-count: infinite;
+       
+    }
+}
+.block1{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 200px;
+    left: 10px;
+    background: rgb(242, 169, 169);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.run1{
+        animation-name: remove;
+        animation-duration: 3s;
+        animation-timing-function: steps(300,start);
+        animation-iteration-count: 3;
+        animation-direction: alternate;
+       
+    }
+}
+
+.block2{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 400px;
+    left: 10px;
+    background: rgb(247, 144, 144);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.run2{
+        animation-name: remove;
+        animation-duration: 3s;
+        animation-timing-function: steps(600,start);
+        // animation-iteration-count: infinite;
+        animation-direction: reverse;
+       
+    }
+}
+
+// @keyframes remove{
+//     from{
+//         left: 10px;
+//     }
+//     to{
+//         left: 300px;
+//     }
+// }
+@keyframes remove {
+    0% {
+        left: 10px;
+    }
+
+    20% {
+        top: 100px;
+        transform: rotate(180deg);
+    }
+
+    50% {
+        top: 150px;
+        transform: rotate(360deg) scale(2);
+    }
+
+    100% {
+        left: 300px;
+    }
+}

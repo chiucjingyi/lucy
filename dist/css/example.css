@@ -1,0 +1,30 @@
+.container {
+  color: rgb(4, 63, 94);
+}
+
+#header {
+  background-color: #407dce;
+  color: aliceblue;
+  font-size: 20px;
+  width: 800px;
+  margin: 20px auto;
+}
+#header:hover {
+  background-color: #1b72dc;
+}
+
+.title {
+  font-size: 30px;
+}
+
+#wrap {
+  height: 250px;
+  background-color: #a5ccff;
+}
+
+.image {
+  display: flex;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+}/*# sourceMappingURL=example.css.map */

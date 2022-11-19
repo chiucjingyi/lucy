@@ -1,0 +1,106 @@
+@charset "UTF-8";
+*,
+::after,
+::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  height: 100%;
+  padding: 0 30px;
+  position: relative;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.solgan {
+  border-bottom: 1px solid rgb(122, 117, 195);
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  opacity: 0.5;
+}
+
+#courses {
+  min-height: 50vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: rgb(255, 255, 255);
+  background-image: url(../images/20210910151609_歷史系.jpg);
+  background-size: cover;
+  position: relative;
+}
+#courses .content {
+  z-index: 99;
+}
+
+.timeline {
+  width: 100%;
+  position: relative;
+  z-index: 9;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  border-left: 4px dashed #fff;
+  top: 0;
+  left: calc(50% - 2px);
+  height: 100%;
+}
+.timeline .item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  word-wrap: break-all;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.timeline .item:first-child {
+  padding-top: 40px;
+}
+.timeline .item:last-child {
+  padding-bottom: 40px;
+}
+.timeline .item:nth-child(even) .text {
+  left: unset;
+  right: calc(50% + 50px);
+  text-align: right;
+  background-color: rgb(142, 103, 46);
+  color: #fff;
+}
+.timeline .circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  background-color: rgb(255, 255, 255);
+}
+.timeline .text {
+  padding: 20px;
+  position: absolute;
+  background-color: rgb(224, 188, 142);
+  border-radius: 8px;
+  color: rgb(81, 48, 5);
+  left: calc(50% + 50px);
+}/*# sourceMappingURL=1.css.map */
