@@ -8,6 +8,60 @@
     <link rel="stylesheet" href="css/print.css">
 </head>
 <body>
-    
+    <h1 class="title">學生成績列表</h1>
+    <div class="container">
+        <div class="fn">
+            <buttom class="buttom" onclick="doPrint()">
+            列印
+            </buttom>
+        </div>
+        <table class="table">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>國語分數</th>
+                <th>數學分數</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>LUCY</td>                
+                <td>80</td>
+                <td>75</td>
+            </tr>
+            <tr>
+                <td>JIMMY</td>
+                <td>90</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>JOY</td>
+                <td>70</td>
+                <td>75</td>
+            </tr>
+            <tr>
+                <td>LUCY</td>                
+                <td>80</td>
+                <td>75</td>
+            </tr>
+            <tr>
+                <td>JIMMY</td>
+                <td>90</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>JOY</td>
+                <td>70</td>
+                <td>75</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+  
 </body>
+<script>
+    function doPrint() {
+        window.print();
+    }
+</script>
 </html>

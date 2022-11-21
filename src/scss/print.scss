@@ -1,1 +1,42 @@
 @import 'reset';
+.title{
+    text-align: center;
+    margin-top: 20px;
+}
+.table{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 20px auto;
+    th, td{
+        border: 1px solid rgb(0, 0, 0);
+        padding: 10px;
+    }
+    th{
+        background-color: rgb(191, 234, 234);
+    }
+    tbody tr:nth-child(odd){
+        background-color: rgb(134, 200, 200);
+        color: aliceblue;
+    }
+
+}
+
+.buttom{
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgb(40, 66, 66);
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+}
+.fn{
+    margin-bottom: 20px;
+    text-align: right;
+}
+@media print {
+    fn{
+        display: none;
+    }
+    
+}
