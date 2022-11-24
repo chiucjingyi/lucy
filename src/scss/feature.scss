@@ -1,0 +1,24 @@
+@import 'reset';
+.change{
+    width: 80%;
+    height: 200px;
+    margin: 20px auto;
+    background-color: rgb(74, 190, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 800px) {
+    .change{
+            background-color: rgb(214, 87, 87);
+    }
+
+    
+}
+@media screen and (max-width: 600px) {
+    .change{
+            background-color: rgb(255, 251, 40);
+    }
+
+    
+}

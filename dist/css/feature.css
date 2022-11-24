@@ -1,0 +1,62 @@
+*,
+::after,
+::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  height: 100%;
+  padding: 0 30px;
+  position: relative;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.solgan {
+  border-bottom: 1px solid rgb(122, 117, 195);
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  opacity: 0.5;
+}
+
+.change {
+  width: 80%;
+  height: 200px;
+  margin: 20px auto;
+  background-color: rgb(74, 190, 190);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .change {
+    background-color: rgb(214, 87, 87);
+  }
+}
+@media screen and (max-width: 600px) {
+  .change {
+    background-color: rgb(255, 251, 40);
+  }
+}/*# sourceMappingURL=feature.css.map */
