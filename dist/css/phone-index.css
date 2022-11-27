@@ -67,6 +67,10 @@ a {
   margin-right: 0;
 }
 
+.content {
+  margin-bottom: 10px;
+}
+
 .humberger {
   display: none;
 }
@@ -83,6 +87,28 @@ a {
 
 @media screen and (max-width: 600px) {
   .humberger {
+    display: block;
+  }
+  .header-menu {
+    display: none;
+  }
+}
+.humberger1 {
+  display: none;
+}
+.humberger1 span {
+  width: 25px;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  display: block;
+  margin-bottom: 4px;
+}
+.humberger1 span:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .humberger1 {
     display: block;
   }
   .header-menu {
