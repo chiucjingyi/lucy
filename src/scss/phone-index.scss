@@ -1,0 +1,25 @@
+@import 'index';
+.humberger{
+    display: none;
+    span{
+        width: 25px;
+        height: 4px;
+        background-color: rgb(255, 255, 255);
+        display: block;
+        // 原因是因為span預設display是inline，其具有無佔據寬高的特性，
+        // 因此改為此，才能吃下其寬高的設定
+        margin-bottom: 4px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .humberger{
+        display: block;
+    }
+    .header-menu{
+        display: none;
+    }
+    
+}
