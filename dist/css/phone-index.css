@@ -89,29 +89,42 @@ a {
   .humberger {
     display: block;
   }
+  .content {
+    position: relative;
+  }
   .header-menu {
-    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: inherit;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .header-menu ul {
+    flex-direction: column;
+  }
+  .header-menu ul li {
+    margin-bottom: 40px;
+    margin-right: 0;
   }
 }
-.humberger1 {
+#swich {
   display: none;
 }
-.humberger1 span {
-  width: 25px;
-  height: 4px;
-  background-color: rgb(255, 255, 255);
-  display: block;
-  margin-bottom: 4px;
+#swich:checked ~ .humberger span {
+  background-color: red;
+  transition: transform 0.3s;
 }
-.humberger1 span:last-child {
-  margin-bottom: 0;
+#swich:checked ~ .humberger span:nth-child(2) {
+  visibility: hidden;
 }
-
-@media screen and (max-width: 600px) {
-  .humberger1 {
-    display: block;
-  }
-  .header-menu {
-    display: none;
-  }
+#swich:checked ~ .humberger span:first-child {
+  transform: rotate(45deg);
+}
+#swich:checked ~ .humberger span:last-child {
+  transform: rotate(-45deg);
+}
+#swich:checked ~ .header-menu {
+  display: flex;
 }/*# sourceMappingURL=phone-index.css.map */
