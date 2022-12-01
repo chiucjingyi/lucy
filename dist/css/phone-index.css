@@ -92,7 +92,8 @@ a {
   .content {
     position: relative;
   }
-  .header-menu {
+  .header-menu:checked ~ .header-menu {
+    display: flex;
     position: absolute;
     top: 70px;
     left: 0;
@@ -101,10 +102,10 @@ a {
     justify-content: center;
     padding-top: 20px;
   }
-  .header-menu ul {
+  .header-menu:checked ~ .header-menu ul {
     flex-direction: column;
   }
-  .header-menu ul li {
+  .header-menu:checked ~ .header-menu ul li {
     margin-bottom: 40px;
     margin-right: 0;
   }
@@ -124,7 +125,4 @@ a {
 }
 #swich:checked ~ .humberger span:last-child {
   transform: rotate(-45deg);
-}
-#swich:checked ~ .header-menu {
-  display: flex;
 }/*# sourceMappingURL=phone-index.css.map */

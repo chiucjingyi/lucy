@@ -25,23 +25,27 @@
         position: relative;
     }
     .header-menu{
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: inherit;
-        justify-content: center;
-        padding-top: 20px;
-        ul {
-            flex-direction: column;
-
-            li {
-                margin-bottom: 40px;
-                margin-right: 0;
-            }
+        &:checked{
+            ~ .header-menu{
+                display: flex;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: inherit;
+                justify-content: center;
+                padding-top: 20px;
+                ul {
+                    flex-direction: column;
+        
+                    li {
+                        margin-bottom: 40px;
+                        margin-right: 0;
+                    }
+                }
+              }  
         }
-
-        }  
+    }
 }
 
 #swich{
@@ -64,10 +68,6 @@
              
                 }
         }
-      ~ .header-menu{
-        display: flex;
-
-      }  
     }
 }    
 
