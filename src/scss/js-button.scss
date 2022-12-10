@@ -41,7 +41,7 @@
         display: flex;
 
     }
-    #click{
+    #operation{
         margin-left: 10px;
         padding: 5px;
         font-size: 10px;
@@ -53,10 +53,11 @@
 #response1{
     width: 100%;
     height: 50px;
-    background-color: rgb(163, 97, 11);
+    background-color: rgb(65, 171, 151);
     color: aliceblue;
     font-size: 50px;
     margin: 20px auto;
     text-align: center;
+    line-height: 50px;
     
 }
